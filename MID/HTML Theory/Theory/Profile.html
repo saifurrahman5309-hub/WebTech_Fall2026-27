@@ -3,10 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title> My Profile </title>
+        <!-- External CSS link -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <img src="Picsart_25-07-12_01-02-48-901.jpg" height="150px" alt="Profile Picture">
+        <img src="Picsart_25-07-12_01-02-48-901.jpg" height="150" alt="Profile Picture">
         <h1> Student Profile </h1>
+
+        <!-- Simple button for JS DOM manipulation -->
+        <button type="button" id="toggleBtn">Hide Phone Number</button>
+        <br><br>
+
         <fieldset>
             <legend> Personal Information </legend>
             <table>
@@ -38,7 +45,8 @@
                     <td> Email : </td>
                     <td> saifurrahman5309@gmail.com </td>
                 </tr>
-                <tr>
+                <!-- id added so JavaScript can show/hide this row -->
+                <tr id="phoneRow">
                     <td> Phone : </td>
                     <td> +880 1730571383 </td>
                 </tr>
@@ -79,5 +87,8 @@
                 </tr>
             </table>
         </fieldset>
+
+        <!-- External JS script link -->
+        <script src="script.js"></script>
     </body>
 </html>
